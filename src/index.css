@@ -5,6 +5,21 @@
     color-scheme: light;
   }
 
+  * {
+    outline: none !important;
+    border: none !important;
+  }
+
+  *:focus {
+    outline: none !important;
+    border: none !important;
+  }
+
+  *:focus-visible {
+    outline: none !important;
+    border: none !important;
+  }
+
   body {
     @apply bg-gray-50 text-gray-900;
     direction: rtl;
@@ -20,6 +35,20 @@
   /* Smooth transitions */
   div, button, a {
     @apply transition-all duration-200;
+  }
+
+  /* Remove borders from charts on click/focus */
+  svg {
+    outline: none !important;
+  }
+
+  .recharts-surface {
+    outline: none !important;
+    border: none !important;
+  }
+
+  .recharts-surface:focus {
+    outline: none !important;
   }
 }
 

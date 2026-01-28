@@ -35,18 +35,18 @@ export function Sidebar() {
       {/* Sidebar */}
       <aside className={`fixed right-0 top-20 md:top-0 h-screen bg-white shadow-2xl z-40 border-l border-gray-100 transform transition-all duration-300 ease-in-out group overflow-hidden
         w-72 ${isOpen ? "translate-x-0" : "translate-x-full"} 
-        md:translate-x-0 md:w-20 md:hover:w-80`}>
+        md:translate-x-0 md:w-20 md:hover:w-80`} dir="rtl">
 
-        <nav className="space-y-2 px-2 md:px-3 pt-6">
+        <nav className="space-y-2 px-2 md:px-3 pt-6" dir="rtl">
           <button
             data-page="dashboard"
             onClick={() => setIsOpen(false)}
-            className="w-full flex items-center gap-3 px-3 py-3 rounded-xl text-gray-700 hover:bg-emerald-50 hover:text-emerald-600 active:bg-emerald-100 transition-all duration-200 group/item"
+            className="w-full flex flex-row-reverse items-center gap-3 px-3 py-3 rounded-xl text-gray-700 hover:bg-emerald-50 hover:text-emerald-600 active:bg-emerald-100 transition-all duration-200 group/item"
           >
-            <span className="text-xl md:text-2xl flex-shrink-0 mx-auto md:mx-0 transition-transform duration-200 group-hover/item:scale-110">
+            <span className="text-xl md:text-2xl flex-shrink-0 transition-transform duration-200 group-hover/item:scale-110">
               <Icons.Dashboard />
             </span>
-            <span className="text-right font-medium text-base opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+            <span className="font-medium text-base opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
               لوحة التحكم
             </span>
           </button>
@@ -56,12 +56,12 @@ export function Sidebar() {
               key={item.id}
               data-page={item.page}
               onClick={() => setIsOpen(false)}
-              className="w-full flex items-center gap-3 px-3 py-3 rounded-xl text-gray-700 hover:bg-blue-50 hover:text-blue-600 active:bg-blue-100 transition-all duration-200 group/item"
+              className="w-full flex flex-row-reverse items-center gap-3 px-3 py-3 rounded-xl text-gray-700 hover:bg-blue-50 hover:text-blue-600 active:bg-blue-100 transition-all duration-200 group/item"
             >
-              <span className="text-xl md:text-2xl flex-shrink-0 mx-auto md:mx-0 transition-transform duration-200 group-hover/item:scale-110">
+              <span className="text-xl md:text-2xl flex-shrink-0 transition-transform duration-200 group-hover/item:scale-110">
                 {item.icon}
               </span>
-              <span className="text-right font-medium text-base opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+              <span className="font-medium text-base opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
                 {item.label}
               </span>
             </button>

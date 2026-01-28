@@ -48,9 +48,9 @@ export function Dashboard() {
           {/* Charts Section */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
             {/* Statistics Bar Chart */}
-            <div className="bg-white rounded-2xl shadow-sm p-4 md:p-8">
+            <div className="bg-white rounded-2xl shadow-sm p-4 md:p-8 outline-none focus:outline-none">
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 md:mb-8">إحصائيات المخيم</h2>
-              <div className="h-[300px] md:h-[450px] w-full">
+              <div className="h-[300px] md:h-[450px] w-full outline-none">
                 <ResponsiveContainer width="100%" height="100%">
                   <BarChart
                     data={[
@@ -92,7 +92,7 @@ export function Dashboard() {
             </div>
 
             {/* Groups Distribution Pie Chart */}
-            <div className="bg-white rounded-2xl shadow-sm p-4 md:p-8">
+            <div className="bg-white rounded-2xl shadow-sm p-4 md:p-8 outline-none focus:outline-none">
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 md:mb-8">توزيع الأفواج</h2>
               <div className="h-[300px] md:h-[450px] w-full">
                 <ResponsiveContainer width="100%" height="100%">
@@ -126,7 +126,7 @@ export function Dashboard() {
             </div>
 
             {/* Activities Progress Line Chart */}
-            <div className="bg-white rounded-2xl shadow-sm p-4 md:p-8 lg:col-span-2">
+            <div className="bg-white rounded-2xl shadow-sm p-4 md:p-8 lg:col-span-2 outline-none focus:outline-none">
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 md:mb-8">تطور النشاطات</h2>
               <div className="h-[300px] md:h-[450px] w-full">
                 <ResponsiveContainer width="100%" height="100%">
